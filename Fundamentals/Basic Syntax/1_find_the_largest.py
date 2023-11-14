@@ -22,12 +22,15 @@
 # # Print the largest number
 # print("The largest number that can be formed is:", largest_number)
 
-first_number = int(input())
+# first_number = int(input())
+#
+# listed = [int(x) for x in str(first_number)]
+#
+# listed.sort(reverse=True)
+#
+# second_number = ''.join(str(listed))
+#
+# print(str(second_number))
 
-listed = [int(x) for x in str(first_number)]
 
-listed.sort(reverse=True)
 
-second_number = ''.join(str(listed))
-
-print(str(second_number))
