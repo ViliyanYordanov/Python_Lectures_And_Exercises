@@ -1,8 +1,13 @@
-# data = input()
-# beggars = int(input())      #1, 2, 3, 4, 5
-#
-# data_split = data.split(', ')
+string_of_integers = input().split(', ')
+beggars = int(input())
 
-my_list = ['1','3','5']
-number = '\n'.join(my_list)
-print(number)
+final_list = []
+beggar_amount = 0
+
+for current_beggar in range(beggars):
+    beggar_coins = 0
+    for current_amount in range(current_beggar, len(string_of_integers), beggars):
+        beggar_coins += int(string_of_integers[current_amount])
+    final_list.append(beggar_coins)
+
+print(final_list)
